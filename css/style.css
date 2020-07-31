@@ -1,0 +1,205 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+}
+
+.carousel img {
+    height: 600px;
+}
+
+.carousel-caption p {
+    color: rgb(46, 53, 63);
+    font-weight: bolder;
+}
+
+.carousel-caption h2 {
+    font-weight: 700;
+    color: black;
+}
+
+.carousel-indicators li {
+    width: 15px;
+    height: 10px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: gray;
+    box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-indicators .active {
+    width: 50px;
+    height: 10px;
+    margin: 10px;
+    background-image: linear-gradient(to right, cyan, rgb(0, 183, 255));
+    border-radius: 5px;
+    border: none;
+}
+
+.featured {
+    margin-top: 100px;
+}
+
+h2.title {
+    font-size: 35px;
+    position: relative;
+    margin: 0 auto;
+    display: inline-block;
+    margin-bottom: 70px;
+    padding-bottom: 18px;
+}
+
+h2.title:after {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 300px;
+    background: transparent linear-gradient(142deg, #0af2c6 0%, #359ff2 100%) 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.newspaper img {
+    width: 150px;
+    height: 100px;
+}
+
+.dhaka-tribune {
+    width: 200px !important;
+    height: 30px !important;
+    margin-top: 40px;
+}
+
+.prothom-alo {
+    margin-top: -15px;
+}
+
+.features {
+    margin-top: 100px;
+}
+
+.card {
+    border-radius: 10px;
+    border: none;
+    transition: box-shadow 2s ease;
+}
+
+.card:hover {
+    border: none;
+    box-shadow: 3px 3px 5px 3px lightslategray;
+    transform: scale(1.0);
+}
+
+.card-img {
+    transform: scale(.9);
+    transition: transform 2s ease;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-body h5 {
+    font-weight: bold;
+}
+
+.card-img:hover {
+    transform: scale(1.0);
+}
+
+.register {
+    margin-top: 100px;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(71, 88, 111, 0.7), rgba(71, 88, 111, 0.7)), url(Images/register/home-page-register.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.student-register,
+.tutor-register {
+    height: 500px;
+    width: 325px;
+    margin: 40px 20px 0 20px;
+}
+
+.student-register ul,
+.tutor-register ul {
+    list-style: none;
+}
+
+.tutor-register ul li:before {
+    content: '✓';
+    font-weight: bolder;
+}
+
+.student-register ul li:before {
+    content: '✓';
+    color: rgb(169, 213, 36) !important;
+    font-weight: bolder;
+}
+
+.student-register {
+    background-color: white;
+}
+
+.tutor-register {
+    background-color: rgb(122, 163, 228);
+    color: white;
+}
+
+.register-button {
+    text-align: center;
+}
+
+.home-page-register-button {
+    border: none;
+    border-radius: 30px;
+    padding: 10px 30px;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+
+.student-register-btn {
+    background-color: rgb(122, 163, 228);
+    color: white;
+}
+
+.student-register-btn:hover {
+    background-color: rgb(38, 117, 235);
+}
+
+.tutor-register-btn {
+    color: rgb(122, 163, 228);
+}
+
+.tutor-register-btn:hover {
+    background-color: rgb(71, 88, 111);
+    color: white;
+}
+
+.for-students,
+.for-tutors {
+    margin-top: 100px;
+    background-color: rgb(242, 245, 252);
+    padding: 50px 0;
+}
+
+.for-students h5,
+.for-tutors h5 {
+    font-weight: bold;
+    color: rgb(8, 61, 141);
+}
+
+.for-students h2,
+.for-tutors h2 {
+    margin-bottom: 100px;
+    font-weight: bold;
+}
+
+.color-orange {
+    color: rgb(251, 173, 33);
+}
