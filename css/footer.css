@@ -1,0 +1,38 @@
+.footer-area {
+    background-color: rgb(38, 50, 56);
+    padding-top: 50px;
+}
+
+.footer-area h5 {
+    color: white;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.footer-area p {
+    color: rgb(182, 182, 174);
+    font-size: 15px;
+}
+
+.footer-area a {
+    color: rgb(182, 182, 174);
+    text-decoration: none;
+    font-size: 15px;
+
+}
+
+.social-icons {
+    width: 150px;
+}
+
+.social {
+    height: 30px;
+    width: 30px;
+    border: 2px solid rgb(182, 182, 174);
+    border-radius: 50%;
+    text-align: center;
+}
+
+hr {
+    background-color: rgb(182, 182, 174);
+}

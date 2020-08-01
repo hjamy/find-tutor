@@ -1,0 +1,50 @@
+.navbar ul {
+    line-height: 50px;
+}
+
+.navbar {
+    font-family: 'Poppins';
+    padding: 0%;
+    margin-bottom: 50px;
+}
+
+.navbar .navbar-brand {
+    margin-left: 50px;
+}
+
+.navbar-nav {
+    margin-right: 50px;
+}
+
+.nav-item {
+    padding: 0px 10px;
+    font-size: 15px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    font-weight: 400;
+    transition: 0.6s ease;
+}
+
+.custom-bg {
+    background-color: rgb(2, 58, 58);
+}
+
+.nav-item a:hover {
+    background-color: rgba(27, 42, 43, 0.9);
+}
+
+.navbar img {
+    height: 50px;
+}
+
+.login-signup-btn {
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(7, 179, 130);
+    color: white;
+    margin-top: 6px;
+    padding: 0 20px;
+}
