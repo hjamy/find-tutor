@@ -1,3 +1,9 @@
+nav .navbar-brand::after {
+    content: "Try a Tutor";
+    font-size: 30px;
+    font-family: 'Oswald', serif;
+}
+
 .navbar ul {
     line-height: 50px;
 }
