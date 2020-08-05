@@ -1,0 +1,23 @@
+.register {
+    margin-top: 100px;
+}
+
+.register h2 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.register-area {
+    margin: 50px 200px;
+    padding: 20px 40px;
+    border: 1px solid lightgray;
+    height: 600px;
+}
+
+.register-button {
+    background-color: rgb(3, 3, 39);
+    padding: 5px 20px;
+    border: none;
+    color: white;
+    float: right;
+    border-radius: 5px;
+}
