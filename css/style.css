@@ -161,19 +161,24 @@ h2.title:after {
 .student-register-btn {
     background-color: rgb(122, 163, 228);
     color: white;
+    text-decoration: none;
 }
 
 .student-register-btn:hover {
     background-color: rgb(38, 117, 235);
+    text-decoration: none;
+    color: white;
 }
 
 .tutor-register-btn {
     color: rgb(122, 163, 228);
+    background-color: white;
 }
 
 .tutor-register-btn:hover {
     background-color: rgb(71, 88, 111);
     color: white;
+    text-decoration: none;
 }
 
 .for-students,

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/tutor-register.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto&family=PT+Serif&family=Oswald&family=Poppins&family=Slabo+27px&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container p-0 mb-5">
+        <nav class="navbar navbar-expand-lg navbar-dark custom-bg fixed-top">
+            <a class="navbar-brand" href="#"><img src="../Images/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="login-signup-btn">Login</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="login-signup-btn">Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container register">
+        <h2 class="text-center mt-5 mb-5">Student Register</h2>
+        <div class="register-area">
+            <form>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <div class="form-check form-check-inline">
+                        Choose your gender:
+                    </div>
+                    <div class="form-check form-check-inline pick">
+                        <input class="form-check-input" type="radio" id="male" name="gender">
+                        <label class="form-check-label" for="male"><i class="fas fa-male pr-2"></i>Male</label>
+                    </div>
+                    <div class="form-check form-check-inline pick">
+                        <input class="form-check-input" type="radio" id="female" name="gender">
+                        <label class="form-check-label" for="female"><i class="fas fa-female pr-2"></i>Female</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="specialty">Specialty</label>
+                    <textarea class="form-control" id="specialty" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="phone-number">Phone Number</label>
+                    <input type="text" class="form-control" id="phone-number">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter E-Mail">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password">
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" class="form-control" id="confirm-password">
+                </div>
+                <button type="submit" class="register-button">Register<i class="fas fa-check pl-2"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container-fluid footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5>About Us</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta
+                            accusamus voluptatibus
+                            perferendis ab nobis sit soluta praesentium quas. Ullam, repellat.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Work with Us</h5>
+                        <p><a href="">Become a Tutor</a></p>
+                        <p><a href="">Login as Tutor</a></p>
+                        <p><a href="">Contact Us</a></p>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Information</h5>
+                        <p><a href="">Home</a><br></p>
+                        <p><a href="">Job Board</a></p>
+                        <p><a href="">Terms & Conditions</a></p>
+                        <p><a href="">Find a Tutor</a></p>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Reach Us</h5>
+                        <p><i class="fas fa-map-marker-alt pr-2"></i>12/3 Khilgaon, Dhaka-1219</p>
+                        <p><i class="fas fa-phone-alt pr-2"></i>+880123456789</p>
+                        <p><i class="far fa-envelope-open pr-2"></i>tryatutor@gmail.com</p>
+                    </div>
+                </div>
+                <h5 class="mt-4">Find Us Here</h5>
+                <div class="social-icons d-flex justify-content-between">
+                    <div class="social">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                    </div>
+                    <div class="social">
+                        <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                    <div class="social">
+                        <a href="#" class="fab fa-twitter"></a>
+                    </div>
+                    <div class="social">
+                        <a href="#" class="fab fa-linkedin-in"></a>
+                    </div>
+                </div>
+                <hr>
+                <p class="text-center" style="font-size: small;">&copy; 2020 Try a Tutor. All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
