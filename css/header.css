@@ -29,23 +29,19 @@
 }
 
 .custom-bg {
-    background-color: rgb(2, 58, 58);
+    background-color: rgb(13, 35, 43);
 }
 
 .nav-item a:hover {
     background-color: rgba(27, 42, 43, 0.9);
+    color: white !important;
 }
 
 .navbar img {
     height: 50px;
 }
 
-.login-signup-btn {
-    text-align: center;
-    border: none;
-    border-radius: 25px;
-    background-color: rgb(7, 179, 130);
-    color: white;
-    margin-top: 6px;
-    padding: 0 20px;
+.dropdown-menu .dropdown-item:hover {
+    background-color: rgb(171, 220, 243);
+    color: rgb(13, 35, 43) !important;
 }
