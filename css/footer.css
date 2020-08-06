@@ -32,6 +32,12 @@
     border: 2px solid rgb(182, 182, 174);
     border-radius: 50%;
     text-align: center;
+    transition: 0.4s ease;
+}
+
+.social:hover {
+    background-color: rgb(15, 21, 24);
+    border: 2px solid rgb(182, 182, 174);
 }
 
 hr {

@@ -1,0 +1,49 @@
+.about {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.team {
+    font-family: "Oswald";
+    font-size: 50px;
+    margin-bottom: 100px;
+}
+
+.card img {
+    margin: auto;
+}
+
+.card {
+    text-align: center;
+    font-family: "Roboto";
+    border: none;
+}
+
+.card h5 {
+    font-weight: 600;
+}
+
+.card-footer {
+    background-color: white;
+    border-top: 0;
+}
+
+.about .social {
+    height: 30px;
+    width: 30px;
+    border: 1px solid rgb(182, 182, 174);
+    border-radius: 50%;
+    text-align: center;
+    background-color: rgb(100, 100, 100);
+    transition: 0.6s ease;
+}
+
+.about .social .fab {
+    color: white;
+    text-decoration: none;
+}
+
+.about .social:hover {
+    background-color: black;
+    border: 2px solid rgb(182, 182, 174);
+}

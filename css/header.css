@@ -47,7 +47,26 @@ nav .navbar-brand::after {
     height: 50px;
 }
 
-.dropdown-menu .dropdown-item:hover {
-    background-color: rgb(171, 220, 243);
-    color: rgb(13, 35, 43) !important;
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    margin-left: 10px;
+}
+
+.dropdown-menu a:hover {
+    background-color: rgb(199, 230, 255);
+    font-weight: 500;
+    color: black !important;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown:hover .nav-link {
+    background-color: rgba(56, 82, 83, 0.5);
 }
