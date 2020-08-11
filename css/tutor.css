@@ -4,6 +4,7 @@
 
 .tutor {
     box-shadow: 2px -1px 5px 1px rgba(133, 216, 230, 1);
+    padding-bottom: 20px;
 }
 
 * {
