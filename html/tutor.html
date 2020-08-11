@@ -19,233 +19,321 @@
 
 <body>
 
-    <div class="container tutor mt-5">
-        <div class="btn-box mb-5 d-flex justify-content-between">
-            <button id="board-button"><i class="fas fa-clipboard-list"></i>Job Board</button>
-            <button id="invitation-button"><i class="fas fa-bell"></i>Job Invitation</button>
-            <button id="employer-button"><i class="fas fa-users"></i>Employer List</button>
-            <button id="profile-button"><i class="fas fa-user"></i>Profile</button>
-        </div>
+    <div class="container p-0 mb-5">
+        <nav class="navbar navbar-expand-lg navbar-dark custom-bg fixed-top">
+            <a class="navbar-brand" href="index.html"><img src="../Images/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- <button class="login-signup-btn">Login</button> -->
+                        <a class="nav-link login-signup-btn" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sign Up
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="student-register.html">Student</a>
+                            <a class="dropdown-item" href="tutor-register.html">Tutor</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 
+    <section class="tutor-area">
+        <div class="container tutor mt-5">
+            <div class="btn-box mb-5 d-flex justify-content-between">
+                <button id="board-button"><i class="fas fa-clipboard-list"></i>Job Board</button>
+                <button id="invitation-button"><i class="fas fa-bell"></i>Job Invitation</button>
+                <button id="employer-button"><i class="fas fa-users"></i>Employer List</button>
+                <button id="profile-button"><i class="fas fa-user"></i>Profile</button>
+            </div>
 
-        <div id="board" class="job-board">
-            <div class="row">
-                <div class="col-md-7">
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Location" aria-label="Search">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Range" aria-label="Search">Km
-                        <button class="btn btn-outline-info my-2 my-sm-0 ml-4" type="submit">Search</button>
-                    </form>
-                    <p class="click-for-details mt-4" style="font-size: 12px; color: gray;">* Click on serial no.
-                        for
-                        details</p>
-                    <table class="table table-hover mt-5">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Location</th>
-                                <th scope="col">Subject</th>
-                                <th scope="col">Salary</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th class="job-serial" scope="row">1</th>
-                                <td>Khilgaon</td>
-                                <td>Math</td>
-                                <td>৳5000</td>
-                            </tr>
-                            <tr>
-                                <th class="job-serial" scope="row">2</th>
-                                <td>Dhanmondi</td>
-                                <td>Chemistry</td>
-                                <td>৳6000</td>
-                            </tr>
-                            <tr>
-                                <th class="job-serial" scope="row">3</th>
-                                <td>Rampura</td>
-                                <td>Physics</td>
-                                <td>৳8000</td>
-                            </tr>
-                            <tr>
-                                <th class="job-serial" scope="row">1</th>
-                                <td>Khilgaon</td>
-                                <td>Math</td>
-                                <td>৳5000</td>
-                            </tr>
-                            <tr>
-                                <th class="job-serial" scope="row">2</th>
-                                <td>Dhanmondi</td>
-                                <td>Chemistry</td>
-                                <td>৳6000</td>
-                            </tr>
-                            <tr>
-                                <th class="job-serial" scope="row">3</th>
-                                <td>Rampura</td>
-                                <td>Physics</td>
-                                <td>৳8000</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="col-md-5">
-                    <div id="job-details" class="details">
-                        <h4 class="title text-center">Job Description</h4>
-                        <br><br>
-                        <div class="details-box pl-5">
-                            <h5>Location: <span>23/C Motijheel, Dhaka-1200</span></h5><br>
-                            <h5>Class: <span>9-10</span></h5><br>
-                            <h5>Subject: <span>Math</span></h5><br>
-                            <h5>Time: <span>4 days weekly</span></h5><br>
-                            <h5>Salary: <span>৳8000</span></h5><br>
-                            <h5>Preferences: <span>Female teacher only</span></h5><br>
-                            <h5>Deadline: <span>20-09-2020</span></h5>
-                            <div class="accept text-center mt-5">
-                                <button>Send Request</button>
+            <div id="board" class="job-board">
+                <div class="row">
+                    <div class="col-md-7">
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Location"
+                                aria-label="Search">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Range" aria-label="Search">Km
+                            <button class="btn btn-outline-info my-2 my-sm-0 ml-4" type="submit">Search</button>
+                        </form>
+                        <p class="click-for-details mt-4" style="font-size: 12px; color: gray;">* Click on serial no.
+                            for
+                            details</p>
+                        <table class="table table-hover mt-5">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Location</th>
+                                    <th scope="col">Subject</th>
+                                    <th scope="col">Salary</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="job-serial" scope="row">1</th>
+                                    <td>Khilgaon</td>
+                                    <td>Math</td>
+                                    <td>৳5000</td>
+                                </tr>
+                                <tr>
+                                    <th class="job-serial" scope="row">2</th>
+                                    <td>Dhanmondi</td>
+                                    <td>Chemistry</td>
+                                    <td>৳6000</td>
+                                </tr>
+                                <tr>
+                                    <th class="job-serial" scope="row">3</th>
+                                    <td>Rampura</td>
+                                    <td>Physics</td>
+                                    <td>৳8000</td>
+                                </tr>
+                                <tr>
+                                    <th class="job-serial" scope="row">1</th>
+                                    <td>Khilgaon</td>
+                                    <td>Math</td>
+                                    <td>৳5000</td>
+                                </tr>
+                                <tr>
+                                    <th class="job-serial" scope="row">2</th>
+                                    <td>Dhanmondi</td>
+                                    <td>Chemistry</td>
+                                    <td>৳6000</td>
+                                </tr>
+                                <tr>
+                                    <th class="job-serial" scope="row">3</th>
+                                    <td>Rampura</td>
+                                    <td>Physics</td>
+                                    <td>৳8000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-5">
+                        <div id="job-details" class="details">
+                            <h4 class="title text-center">Job Description</h4>
+                            <br><br>
+                            <div class="details-box pl-5">
+                                <h5>Location: <span>23/C Motijheel, Dhaka-1200</span></h5><br>
+                                <h5>Class: <span>9-10</span></h5><br>
+                                <h5>Subject: <span>Math</span></h5><br>
+                                <h5>Time: <span>4 days weekly</span></h5><br>
+                                <h5>Salary: <span>৳8000</span></h5><br>
+                                <h5>Preferences: <span>Female teacher only</span></h5><br>
+                                <h5>Deadline: <span>20-09-2020</span></h5>
+                                <div class="accept text-center mt-5">
+                                    <button>Send Request</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div id="invitation" class="job-invitation">
-            <div class="row">
-                <div class="col-md-7">
-                    <p class="click-for-details mt-2" style="font-size: 12px; color: gray;">* Click on serial no.
-                        for
-                        details</p>
-                    <table class="table table-hover mt-3">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Location</th>
-                                <th scope="col">Subject</th>
-                                <th scope="col">Salary</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th class="invitation-serial" scope="row">1</th>
-                                <td>Khilgaon</td>
-                                <td>Math</td>
-                                <td>৳5000</td>
-                            </tr>
-                            <tr>
-                                <th class="invitation-serial" scope="row">2</th>
-                                <td>Dhanmondi</td>
-                                <td>Chemistry</td>
-                                <td>৳6000</td>
-                            </tr>
-                            <tr>
-                                <th class="invitation-serial" scope="row">3</th>
-                                <td>Rampura</td>
-                                <td>Physics</td>
-                                <td>৳8000</td>
-                            </tr>
-                            <tr>
-                                <th class="invitation-serial" scope="row">1</th>
-                                <td>Khilgaon</td>
-                                <td>Math</td>
-                                <td>৳5000</td>
-                            </tr>
-                            <tr>
-                                <th class="invitation-serial" scope="row">2</th>
-                                <td>Dhanmondi</td>
-                                <td>Chemistry</td>
-                                <td>৳6000</td>
-                            </tr>
-                            <tr>
-                                <th class="invitation-serial" scope="row">3</th>
-                                <td>Rampura</td>
-                                <td>Physics</td>
-                                <td>৳8000</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+            <div id="invitation" class="job-invitation">
+                <div class="row">
+                    <div class="col-md-7">
+                        <p class="click-for-details mt-2" style="font-size: 12px; color: gray;">* Click on serial no.
+                            for
+                            details</p>
+                        <table class="table table-hover mt-3">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Location</th>
+                                    <th scope="col">Subject</th>
+                                    <th scope="col">Salary</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th class="invitation-serial" scope="row">1</th>
+                                    <td>Khilgaon</td>
+                                    <td>Math</td>
+                                    <td>৳5000</td>
+                                </tr>
+                                <tr>
+                                    <th class="invitation-serial" scope="row">2</th>
+                                    <td>Dhanmondi</td>
+                                    <td>Chemistry</td>
+                                    <td>৳6000</td>
+                                </tr>
+                                <tr>
+                                    <th class="invitation-serial" scope="row">3</th>
+                                    <td>Rampura</td>
+                                    <td>Physics</td>
+                                    <td>৳8000</td>
+                                </tr>
+                                <tr>
+                                    <th class="invitation-serial" scope="row">1</th>
+                                    <td>Khilgaon</td>
+                                    <td>Math</td>
+                                    <td>৳5000</td>
+                                </tr>
+                                <tr>
+                                    <th class="invitation-serial" scope="row">2</th>
+                                    <td>Dhanmondi</td>
+                                    <td>Chemistry</td>
+                                    <td>৳6000</td>
+                                </tr>
+                                <tr>
+                                    <th class="invitation-serial" scope="row">3</th>
+                                    <td>Rampura</td>
+                                    <td>Physics</td>
+                                    <td>৳8000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
-                <div class="col-md-5">
-                    <div id="invitation-details" class="details">
-                        <h4 class="title text-center">Job Description</h4>
-                        <br><br>
-                        <div class="details-box pl-5">
-                            <h5>Location: <span>23/C Khilgaon, Dhaka-1200</span></h5><br>
-                            <h5>Class: <span>9-10</span></h5><br>
-                            <h5>Subject: <span>Chemistry</span></h5><br>
-                            <h5>Time: <span>3 days weekly</span></h5><br>
-                            <h5>Salary: <span>৳6000</span></h5><br>
-                            <h5>Preferences: <span>Male teacher only</span></h5><br>
-                            <h5>Deadline: <span>20-09-2020</span></h5>
-                            <div class="accept text-center mt-5">
-                                <button>Accept</button>
+                    <div class="col-md-5">
+                        <div id="invitation-details" class="details">
+                            <h4 class="title text-center">Job Description</h4>
+                            <br><br>
+                            <div class="details-box pl-5">
+                                <h5>Location: <span>23/C Khilgaon, Dhaka-1200</span></h5><br>
+                                <h5>Class: <span>9-10</span></h5><br>
+                                <h5>Subject: <span>Chemistry</span></h5><br>
+                                <h5>Time: <span>3 days weekly</span></h5><br>
+                                <h5>Salary: <span>৳6000</span></h5><br>
+                                <h5>Preferences: <span>Male teacher only</span></h5><br>
+                                <h5>Deadline: <span>20-09-2020</span></h5>
+                                <div class="accept text-center mt-5">
+                                    <button>Accept</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div id="employer" class="employer-list">
-            <div class="row">
-                <div class="col-5">
-                    <ul class="list-group">
-                        <li class="list-group-item employer-individual">Cras justo odio</li>
-                        <li class="list-group-item employer-individual">Dapibus ac facilisis in</li>
-                        <li class="list-group-item employer-individual">Morbi leo risus</li>
-                        <li class="list-group-item employer-individual">Porta ac consectetur ac</li>
-                        <li class="list-group-item employer-individual">Vestibulum at eros</li>
-                    </ul>
+            <div id="employer" class="employer-list">
+                <div class="row">
+                    <div class="col-5">
+                        <ul class="list-group">
+                            <li class="list-group-item employer-individual">Cras justo odio</li>
+                            <li class="list-group-item employer-individual">Dapibus ac facilisis in</li>
+                            <li class="list-group-item employer-individual">Morbi leo risus</li>
+                            <li class="list-group-item employer-individual">Porta ac consectetur ac</li>
+                            <li class="list-group-item employer-individual">Vestibulum at eros</li>
+                        </ul>
+                    </div>
+                    <div id="employer-id" class="col-7 employer-details">
+                        <img class="rounded-circle w-25 mb-5"
+                            src="https://i.ibb.co/f946rJY/65387270-894926760860678-8038545002617372672-n.jpg" alt="">
+                        <div class="employer-info d-flex align-items-center">
+                            <h5><i class="fas fa-user"></i>Arafat Yousuf</h5><br>
+                        </div>
+                        <div class="employer-info d-flex align-items-center">
+                            <h5><i class="fas fa-envelope"></i>arafatyousuf@gmail.com</h5><br>
+                        </div>
+                        <div class="employer-info d-flex align-items-center">
+                            <h5><i class="fas fa-phone-alt"></i>01719134855</h5><br>
+                        </div>
+                        <div class="employer-info d-flex align-items-center">
+                            <h5><i class="fas fa-map-marker-alt"></i>43/A Jigatola, Dhaka-1100</h5><br>
+                        </div>
+                    </div>
                 </div>
-                <div id="employer-id" class="col-7 employer-details">
-                    <img class="rounded-circle w-25 mb-5"
-                        src="https://i.ibb.co/f946rJY/65387270-894926760860678-8038545002617372672-n.jpg" alt="">
-                    <div class="employer-info d-flex align-items-center">
-                        <h5><i class="fas fa-user"></i>Arafat Yousuf</h5><br>
+            </div>
+            <div id="profile" class="tutor-profile">
+                <div class="card">
+                    <div class="text-center">
+                        <img class="rounded-circle mt-4"
+                            src="https://i.ibb.co/h7zW4zX/93885242-1548123698673359-1072838940270002176-o.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title pt-3">Taqi Tahmid</h5>
+                            <p class="card-text text-secondary">Student</p>
+                            <p>Specialty in <span>Physics, Chemistry, Math</span></p>
+                        </div>
                     </div>
-                    <div class="employer-info d-flex align-items-center">
-                        <h5><i class="fas fa-envelope"></i>arafatyousuf@gmail.com</h5><br>
+                    <div class="contact d-flex justify-content-between">
+                        <div class="text-center w-50" style="border-right: 1px solid rgb(180, 179, 179);">
+                            <p><i class="fas fa-phone-alt pr-2"></i>01712345678</p>
+                        </div>
+                        <div class="text-center w-50">
+                            <p><i class="fas fa-envelope pr-2"></i>tqitahmid@gmail.com</p>
+                        </div>
                     </div>
-                    <div class="employer-info d-flex align-items-center">
-                        <h5><i class="fas fa-phone-alt"></i>01719134855</h5><br>
-                    </div>
-                    <div class="employer-info d-flex align-items-center">
-                        <h5><i class="fas fa-map-marker-alt"></i>43/A Jigatola, Dhaka-1100</h5><br>
+                    <div class="card-footer text-center mt-4">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-google"></a>
+                        <a href="#" class="fab fa-linkedin-in"></a>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="profile" class="tutor-profile">
-            <div class="card">
-                <div class="text-center">
-                    <img class="rounded-circle mt-4"
-                        src="https://i.ibb.co/h7zW4zX/93885242-1548123698673359-1072838940270002176-o.jpg"
-                        class="card-img-top" alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title pt-3">Taqi Tahmid</h5>
-                        <p class="card-text text-secondary">Student</p>
-                        <p>Specialty in <span>Physics, Chemistry, Math</span></p>
+    </section>
+
+    <footer>
+        <div class="container-fluid footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5>About Us</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta
+                            accusamus voluptatibus
+                            perferendis ab nobis sit soluta praesentium quas. Ullam, repellat.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Work with Us</h5>
+                        <p><a href="">Become a Tutor</a></p>
+                        <p><a href="">Login as Tutor</a></p>
+                        <p><a href="">Contact Us</a></p>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Information</h5>
+                        <p><a href="">Home</a><br></p>
+                        <p><a href="">Job Board</a></p>
+                        <p><a href="">Terms & Conditions</a></p>
+                        <p><a href="">Find a Tutor</a></p>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Reach Us</h5>
+                        <p><i class="fas fa-map-marker-alt pr-2"></i>12/3 Khilgaon, Dhaka-1219</p>
+                        <p><i class="fas fa-phone-alt pr-2"></i>+880123456789</p>
+                        <p><i class="far fa-envelope-open pr-2"></i>tryatutor@gmail.com</p>
                     </div>
                 </div>
-                <div class="contact d-flex justify-content-between">
-                    <div class="text-center w-50" style="border-right: 1px solid rgb(180, 179, 179);">
-                        <p><i class="fas fa-phone-alt pr-2"></i>01712345678</p>
+                <h5 class="mt-4">Find Us Here</h5>
+                <div class="social-icons d-flex justify-content-between">
+                    <div class="social">
+                        <a href="#" class="fab fa-facebook-f"></a>
                     </div>
-                    <div class="text-center w-50">
-                        <p><i class="fas fa-envelope pr-2"></i>tqitahmid@gmail.com</p>
+                    <div class="social">
+                        <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                    <div class="social">
+                        <a href="#" class="fab fa-twitter"></a>
+                    </div>
+                    <div class="social">
+                        <a href="#" class="fab fa-linkedin-in"></a>
                     </div>
                 </div>
-                <div class="card-footer text-center mt-4">
-                    <a href="#" class="fab fa-facebook-f"></a>
-                    <a href="#" class="fab fa-google"></a>
-                    <a href="#" class="fab fa-linkedin-in"></a>
-                </div>
+                <hr>
+                <p class="text-center" style="font-size: small;">&copy; 2020 Try a Tutor. All rights reserved</p>
             </div>
-
         </div>
-    </div>
+    </footer>
 
-    </div>
 
 
     <script src="../js/tutor.js"></script>

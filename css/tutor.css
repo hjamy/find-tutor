@@ -1,3 +1,7 @@
+.tutor-area {
+    margin: 150px 0 100px;
+}
+
 .tutor {
     box-shadow: 2px -1px 5px 1px rgba(133, 216, 230, 1);
 }
@@ -24,7 +28,7 @@
 }
 
 .btn-box button:hover {
-    color: palevioletred;
+    color: #04BFCD;
 }
 
 tr:hover {

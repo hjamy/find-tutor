@@ -1,4 +1,7 @@
 const boardBtn = document.getElementById("board-button");
+const invitationBtn = document.getElementById("invitation-button");
+const employerBtn = document.getElementById("employer-button");
+const profileBtn = document.getElementById("profile-button");
 boardBtn.addEventListener("click", function () {
     const board = document.getElementById("board");
     board.style.display = "block"
@@ -10,9 +13,13 @@ boardBtn.addEventListener("click", function () {
     profile.style.display = "none"
     const jobDetails = document.getElementById("job-details")
     jobDetails.style.display = "none"
+    boardBtn.style.color = "#04BFCD";
+    invitationBtn.style.color = "000";
+    employerBtn.style.color = "000";
+    profileBtn.style.color = "000";
 })
 
-const invitationBtn = document.getElementById("invitation-button");
+
 invitationBtn.addEventListener("click", function () {
     const invitation = document.getElementById("invitation");
     invitation.style.display = "block"
@@ -24,9 +31,13 @@ invitationBtn.addEventListener("click", function () {
     profile.style.display = "none"
     const invitationDetails = document.getElementById("invitation-details")
     invitationDetails.style.display = "none"
+    boardBtn.style.color = "#000";
+    invitationBtn.style.color = "#04BFCD";
+    employerBtn.style.color = "#000";
+    profileBtn.style.color = "#000";
 })
 
-const employerBtn = document.getElementById("employer-button");
+
 employerBtn.addEventListener("click", function () {
     const employer = document.getElementById("employer");
     employer.style.display = "block"
@@ -38,9 +49,13 @@ employerBtn.addEventListener("click", function () {
     profile.style.display = "none"
     const employerId = document.getElementById("employer-id")
     employerId.style.display = "none"
+    boardBtn.style.color = "#000";
+    invitationBtn.style.color = "#000";
+    employerBtn.style.color = "#04BFCD";
+    profileBtn.style.color = "#000";
 })
 
-const profileBtn = document.getElementById("profile-button");
+
 profileBtn.addEventListener("click", function () {
     const profile = document.getElementById("profile");
     profile.style.display = "block"
@@ -50,6 +65,10 @@ profileBtn.addEventListener("click", function () {
     invitation.style.display = "none"
     const employer = document.getElementById("employer");
     employer.style.display = "none"
+    boardBtn.style.color = "#000";
+    invitationBtn.style.color = "#000";
+    employerBtn.style.color = "#000";
+    profileBtn.style.color = "#04BFCD";
 })
 
 
