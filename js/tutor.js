@@ -14,9 +14,9 @@ boardBtn.addEventListener("click", function () {
     const jobDetails = document.getElementById("job-details")
     jobDetails.style.display = "none"
     boardBtn.style.color = "#04BFCD";
-    invitationBtn.style.color = "000";
-    employerBtn.style.color = "000";
-    profileBtn.style.color = "000";
+    invitationBtn.style.color = "#000";
+    employerBtn.style.color = "#000";
+    profileBtn.style.color = "#000";
 })
 
 
