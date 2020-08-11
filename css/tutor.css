@@ -140,14 +140,31 @@ tr:hover {
 }
 
 .card {
-    width: 45%;
+    background-image: url("../Images/background/profile-background.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 37%;
     margin: 50px auto;
     border: none;
     box-shadow: 3px 3px 5px 2px gray;
 }
 
 .card img {
+    margin-top: 30px;
     width: 45%;
+}
+
+.card-content {
+    margin-top: 50px;
+}
+
+.card-content p {
+    font-size: 15px;
+}
+
+.contact p {
+    font-size: 14px;
 }
 
 .card-footer {
