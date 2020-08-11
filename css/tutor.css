@@ -1,16 +1,13 @@
 .tutor-area {
     margin: 150px 0 100px;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins";
 }
 
 .tutor {
     box-shadow: 2px -1px 5px 1px rgba(133, 216, 230, 1);
     padding-bottom: 20px;
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    font-family: "Poppins";
 }
 
 .btn-box {
