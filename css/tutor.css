@@ -64,6 +64,26 @@ tr:hover {
     display: none;
 }
 
+#invitation-details {
+    display: none;
+}
+
+#employer-id {
+    display: none;
+}
+
+#invitation {
+    display: none;
+}
+
+#employer {
+    display: none;
+}
+
+#profile {
+    display: none;
+}
+
 .details h4 {
     font-weight: bold;
 }
@@ -82,7 +102,7 @@ tr:hover {
 .details-box button {
     padding: 10px 40px;
     text-decoration: none;
-    background: transparent;
+    background-color: #007bff;
     border: none;
     border-radius: 30px;
     text-align: center;
@@ -90,6 +110,57 @@ tr:hover {
     outline: none;
 }
 
-.table-hover tbody tr:hover .serial-no {
+.table-hover tbody tr:hover .job-serial,
+.table-hover tbody tr:hover .invitation-serial {
     cursor: pointer;
+}
+
+.employer-list ul li:hover {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.employer-details {
+    padding-left: 150px;
+}
+
+.employer-info {
+    border-left: 3px solid;
+    border-image: linear-gradient(180deg, blue, cyan);
+    border-image-slice: 1;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    font-family: "Roboto";
+}
+
+.employer-info .fas {
+    background-color: white;
+    padding: 5px 10px;
+}
+
+.card {
+    width: 45%;
+    margin: 50px auto;
+    border: none;
+    box-shadow: 3px 3px 5px 2px gray;
+}
+
+.card img {
+    width: 45%;
+}
+
+.card-footer {
+    border: none;
+    background-color: rgb(43, 4, 88);
+}
+
+.card span {
+    color: orange;
+}
+
+.card-footer .fab {
+    padding: 0 20px;
+    text-decoration: none;
+    color: white;
 }
