@@ -7,9 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/student-register.css">
-    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/tutor-login.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/header.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto&family=PT+Serif&family=Oswald&family=Poppins&family=Slabo+27px&display=swap"
         rel="stylesheet">
@@ -61,35 +61,21 @@
         </nav>
     </div>
 
-    <div class="container register">
-        <h2 class="text-center mt-5 mb-5">Student Register</h2>
-        <div class="register-area">
+    <div class="container login-area">
+        <h2>Tutor Login</h2>
+        <div class="submit-area">
             <form>
                 <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" class="form-control" placeholder="E-Mail">
                 </div>
                 <div class="form-group">
-                    <label for="address">Home Address</label>
-                    <input type="text" class="form-control" id="address" placeholder="Current Address">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" class="form-control" placeholder="Password">
                 </div>
-                <div class="form-group">
-                    <label for="phone-number">Phone Number</label>
-                    <input type="text" class="form-control" id="phone-number">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter E-Mail">
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password">
-                </div>
-                <div class="form-group">
-                    <label for="confirm-password">Confirm Password</label>
-                    <input type="password" class="form-control" id="confirm-password">
-                </div>
-                <button type="submit" class="register-button">Register<i class="fas fa-check pl-2"></i></button>
+                <br>
+                <a class="login" href="tutor.html"><i class="fas fa-sign-in-alt pr-2"></i>Login</a>
+                <!-- <button type="submit" class="btn btn-primary"><i class="fas fa-sign-in-alt pr-2"></i>Login</button> -->
             </form>
         </div>
     </div>
