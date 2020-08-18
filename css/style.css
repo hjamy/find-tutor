@@ -32,6 +32,11 @@
     border: none;
 }
 
+/* .carousel-inner img {
+    background-position: center;
+    background-size: contain;
+} */
+
 .featured {
     margin-top: 100px;
 }
