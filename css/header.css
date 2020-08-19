@@ -53,6 +53,9 @@ nav .navbar-brand::after {
 .dropdown-menu {
     display: none;
     position: absolute;
+}
+
+.drop-menu {
     margin-left: 10px;
 }
 

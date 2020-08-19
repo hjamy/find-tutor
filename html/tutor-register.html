@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="../css/tutor-register.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
@@ -14,6 +16,7 @@
         href="https://fonts.googleapis.com/css2?family=Roboto&family=PT+Serif&family=Oswald&family=Poppins&family=Slabo+27px&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
 </head>
 
 <body>
@@ -41,7 +44,7 @@
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Login
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu drop-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="student-login.html">Student</a>
                             <a class="dropdown-item" href="tutor-login.html">Tutor</a>
                         </div>
@@ -51,7 +54,7 @@
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Sign Up
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu drop-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="student-register.html">Student</a>
                             <a class="dropdown-item" href="tutor-register.html">Tutor</a>
                         </div>
@@ -82,14 +85,19 @@
                         <label class="form-check-label" for="female"><i class="fas fa-female pr-2"></i>Female</label>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="specialty">Specialty</label>
-                    <textarea class="form-control" id="specialty" rows="3"></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="occupation">Occupation</label>
-                    <input type="text" class="form-control" id="occupation">
-                </div>
+                <select class="selectpicker" data-style="btn-dark" title="Choose institution">
+                    <optgroup label="University">
+                        <option>Buet</option>
+                        <option>DU</option>
+                        <option>AUST</option>
+                    </optgroup>
+                    <optgroup label="College">
+                        <option>NDC</option>
+                        <option>DC</option>
+                        <option>VNC</option>
+                    </optgroup>
+                </select>
+                <br> <br>
                 <div class="form-group">
                     <label for="phone-number">Phone Number</label>
                     <input type="text" class="form-control" id="phone-number">
@@ -106,7 +114,16 @@
                     <label for="confirm-password">Confirm Password</label>
                     <input type="password" class="form-control" id="confirm-password">
                 </div>
-                <br>
+                <select class="selectpicker" data-style="btn-dark" data-width="fit" multiple
+                    title="Choose subject preference">
+                    <option>Physics</option>
+                    <option>Chemistry</option>
+                    <option>Mathematics</option>
+                    <option>ICT</option>
+                    <option>English</option>
+                    <option>Bengali</option>
+                </select>
+                <br> <br>
                 <a class="register-button" href="tutor.html">Register<i class="fas fa-check pl-2"></i></a>
                 <!-- <button type="submit" class="register-button">Register<i class="fas fa-check pl-2"></i></button> -->
             </form>
@@ -164,6 +181,7 @@
         </div>
     </footer>
 
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
@@ -173,6 +191,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+
 </body>
 
 </html>
