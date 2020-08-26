@@ -24,7 +24,7 @@
 }
 
 .btn-box button:hover {
-    color: #04BFCD;
+    color: #04BFCD !important;
 }
 
 tr:hover {
@@ -58,6 +58,10 @@ tr:hover {
     border-image: linear-gradient(180deg, blue, cyan);
     border-image-slice: 1;
     border-radius: 50%;
+}
+
+#board-button {
+    color: #04BFCD;
 }
 
 #job-details {
