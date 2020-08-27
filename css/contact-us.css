@@ -1,0 +1,130 @@
+.contact-area {
+    height: auto;
+    background-image: url(../Images/Contact/Contact_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.contact-us {
+    padding: 100px 0px;
+}
+
+.back-section {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    padding-bottom: 40px;
+}
+
+.location {
+    padding: 50px 0px;
+    color: white;
+}
+
+iframe {
+    border-radius: 2px;
+}
+
+.contact-info {
+    padding: 20px 50px;
+}
+
+.contact-info input {
+    width: 70%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid lightgray;
+    border-radius: 2px;
+    color: white;
+    background: none;
+}
+
+.contact-info textarea {
+    width: 70%;
+    background-color: transparent;
+    border: none;
+    border: 2px solid lightgray;
+    border-radius: 2px;
+    color: white;
+}
+
+.contact-info input:focus,
+.contact-info textarea:focus {
+    border: none !important;
+    background-color: transparent;
+    border-bottom: 2px solid lightgray;
+    border-radius: none;
+    outline: none !important;
+    color: white;
+}
+
+.contact-info label {
+    color: white;
+}
+
+.send-us-button {
+    text-decoration: none !important;
+    background-color: #07770d;
+    padding: 10px 30px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    transition: 0.6s ease;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.send-us-button:hover {
+    color: white;
+    background-color: #0aa311;
+    border-radius: 30px;
+    padding: 10px 80px;
+}
+
+.contact-icons {
+    padding-top: 5px;
+}
+
+.contact-icons .social {
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+}
+
+.contact-icons .social .fab {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-icons .fb {
+    background-color: #3b5998;
+}
+
+.contact-icons .twitter {
+    background-color: #00acee;
+}
+
+.contact-icons .google {
+    background-color: #db3236;
+}
+
+.contact-icons .linked-in {
+    background-color: #0e76a8;
+}
+
+.contact-icons .fb:hover {
+    box-shadow: 0px 0px 5px 1px #3b5998;
+}
+
+.contact-icons .twitter:hover {
+    box-shadow: 0px 0px 5px 1px #00acee;
+}
+
+.contact-icons .google:hover {
+    box-shadow: 0px 0px 5px 1px #db3236;
+}
+
+.contact-icons .linked-in:hover {
+    box-shadow: 0px 0px 5px 1px #0e76a8;
+}
