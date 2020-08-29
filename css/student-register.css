@@ -9,8 +9,11 @@
 .register-area {
     margin: 50px 200px;
     padding: 20px 40px;
-    border: 1px solid lightgray;
-    height: 600px;
+    border: 1px solid gray;
+    height: 570px;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: "Roboto" !important;
 }
 
 .register-button {
@@ -20,10 +23,56 @@
     color: white;
     float: right;
     border-radius: 5px;
+    font-size: 16px;
 }
 
 .register-button:hover {
     text-decoration: none;
     background-color: rgb(1, 1, 49);
     color: white;
+}
+
+.student-register-form {
+    padding-top: 10px;
+}
+
+.form-label {
+    font-size: 1em;
+    color: #aaa;
+    display: block;
+    opacity: 1;
+    transform: translateY(-2em);
+    transform-origin: 0 0;
+    transition: all .3s;
+}
+
+.form-control {
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, .02);
+    border-radius: 0px;
+    border-color: rgb(160, 160, 160);
+    border-style: none none solid none;
+    width: 100%;
+    transition: all 0.5s;
+    padding: 5px;
+    background-color: transparent;
+}
+
+.form-control::placeholder {
+    color: transparent;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    outline: none;
+    border-color: rgb(132, 0, 255);
+}
+
+.form-control:focus+.form-label,
+.form-control:not(:placeholder-shown)+.form-label {
+    transform: translateY(-3em) scale(0.8);
+}
+
+.form-control:focus-within {
+    transform: scale(1.05, 1.05);
 }

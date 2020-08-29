@@ -26,17 +26,17 @@ iframe {
 }
 
 .contact-info {
-    padding: 20px 50px;
+    padding: 40px 50px;
 }
 
 .contact-info input {
     width: 70%;
     background-color: transparent;
-    border: none;
+    /* border: none;
     border-bottom: 2px solid lightgray;
-    border-radius: 2px;
+    border-radius: 2px; */
     color: white;
-    background: none;
+    /* background: none; */
 }
 
 .contact-info textarea {
@@ -48,13 +48,17 @@ iframe {
     color: white;
 }
 
-.contact-info input:focus,
-.contact-info textarea:focus {
-    border: none !important;
+.contact-info input:focus {
     background-color: transparent;
-    border-bottom: 2px solid lightgray;
+    color: white;
+}
+
+.contact-info textarea:focus {
+    /* border: none !important; */
+    background-color: transparent;
+    /* border-bottom: 2px solid lightgray;
     border-radius: none;
-    outline: none !important;
+    outline: none !important; */
     color: white;
 }
 
@@ -127,4 +131,51 @@ iframe {
 
 .contact-icons .linked-in:hover {
     box-shadow: 0px 0px 5px 1px #0e76a8;
+}
+
+.form-label {
+    font-size: 1em;
+    color: #aaa;
+    display: block;
+    opacity: 1;
+    transform: translateY(-2em);
+    transform-origin: 0 0;
+    transition: all .3s;
+}
+
+.form-control {
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, .02);
+    border-radius: 0px;
+    border-color: #ccc;
+    border-style: none none solid none;
+    width: 100%;
+    transition: all 0.5s;
+    padding: 5px;
+}
+
+.form-control::placeholder {
+    color: transparent;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    outline: none;
+    border-color: rgb(119, 0, 255);
+}
+
+.form-control-textarea:focus {
+    box-shadow: none;
+    outline: none;
+    border-color: rgb(119, 0, 255);
+    border-style: none none solid solid;
+}
+
+.form-control:focus+.form-label,
+.form-control:not(:placeholder-shown)+.form-label {
+    transform: translateY(-3.3em) scale(0.8);
+}
+
+.form-control:focus-within {
+    transform: scale(1.05, 1.05);
 }

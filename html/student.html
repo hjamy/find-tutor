@@ -101,7 +101,8 @@
                         </select>
                         <br><br><br>
                         <div class="text-center">
-                            <a class="job-post-button" href="">Post Job</a>
+                            <button id="post-job-button-id" class="job-post-button">Post Job</button>
+                            <!-- <a id="post-job-button-id" class="job-post-button" href="">Post Job</a> -->
                         </div>
                     </form>
                 </div>
@@ -144,7 +145,8 @@
                     <div class="row">
                         <div class="col-5">
                             <ul class="list-group">
-                                <li class="list-group-item founded-tutor-individual">Cras justo odio</li>
+                                <li id="founded-tutor-individual-id" class="list-group-item founded-tutor-individual">
+                                    Cras justo odio</li>
                                 <li class="list-group-item founded-tutor-individual">Dapibus ac facilisis in</li>
                                 <li class="list-group-item founded-tutor-individual">Morbi leo risus</li>
                                 <li class="list-group-item founded-tutor-individual">Porta ac consectetur ac</li>
@@ -152,6 +154,114 @@
                             </ul>
                         </div>
                         <div id="founded-tutor-id" class="col-7 founded-tutor-details">
+                            <img class="rounded-circle w-25 mb-5"
+                                src="https://i.ibb.co/h7zW4zX/93885242-1548123698673359-1072838940270002176-o.jpg"
+                                alt="">
+                            <div class="tutor-info d-flex align-items-center">
+                                <h5><i class="fas fa-user"></i>Taqi Tahmid</h5><br>
+                            </div>
+                            <div class="tutor-info d-flex align-items-center">
+                                <h5><i class="fas fa-university"></i>Student at AUST</h5><br>
+                            </div>
+                            <div class="tutor-info d-flex align-items-center">
+                                <h5><i class="fas fa-book"></i>Specialty in Math, Physics</h5><br>
+                            </div>
+                            <div class="container text-center">
+                                <button id="send-request-button" class="send-request"
+                                    onclick="toastr.success('Hi! I am success message.');">Send Request</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="notification-area-id" class="notification-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 notifications">
+                            <div id="type-1-notification-id" class="type-1-notification">
+                                <div class="upper-portion d-flex justify-content-start">
+                                    <div class="round-shape-type-1  d-flex justify-content-center align-items-center">
+                                        <h5>J</h5>
+                                    </div>
+                                    <div class="notification-type pl-3">
+                                        <p class="text-secondary">Application for job</p>
+                                    </div>
+                                </div>
+                                <div class="lower-portion">
+                                    <p><span>Taqi Tahmid</span> applied for your job post.<p>
+                                </div>
+                                <div class="notification-button-portion d-flex justify-content-end">
+                                    <button id="remove-tutor-notification-id-type-1"
+                                        class="remove-tutor-notification">REMOVE
+                                        NOTIFICATION</button>
+                                    <button id="see-tutor-details-id-type-1" class="see-tutor-details ml-3">SEE TUTOR
+                                        DETAILS</button>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div id="type-2-notification-id" class="type-2-notification">
+                                <div class="upper-portion d-flex justify-content-start">
+                                    <div class="round-shape-type-2  d-flex justify-content-center align-items-center">
+                                        <h5>F</h5>
+                                    </div>
+                                    <div class="notification-type pl-3">
+                                        <p class="text-secondary">Accepted job invitation</p>
+                                    </div>
+                                </div>
+                                <div class="lower-portion">
+                                    <p><span>Arafat Yousuf</span> accepted your job request.<p>
+                                </div>
+                                <div class="notification-button-portion d-flex justify-content-end">
+                                    <button id="remove-tutor-notification-id-type-2"
+                                        class="remove-tutor-notification">REMOVE
+                                        NOTIFICATION</button>
+                                    <button id="see-tutor-details-id-type-2" class="see-tutor-details ml-3">SEE TUTOR
+                                        DETAILS</button>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="type-1-notification">
+                                <div class="upper-portion d-flex justify-content-start">
+                                    <div class="round-shape-type-1  d-flex justify-content-center align-items-center">
+                                        <h5>J</h5>
+                                    </div>
+                                    <div class="notification-type pl-3">
+                                        <p class="text-secondary">Application for job</p>
+                                    </div>
+                                </div>
+                                <div class="lower-portion">
+                                    <p><span>Taqi Tahmid</span> applied for your job post.<p>
+                                </div>
+                                <div class="notification-button-portion d-flex justify-content-end">
+                                    <button class="remove-tutor-notification">REMOVE NOTIFICATION</button>
+                                    <button class="see-tutor-details ml-3">SEE TUTOR DETAILS</button>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="type-2-notification">
+                                <div class="upper-portion d-flex justify-content-start">
+                                    <div class="round-shape-type-2  d-flex justify-content-center align-items-center">
+                                        <h5>F</h5>
+                                    </div>
+                                    <div class="notification-type pl-3">
+                                        <p class="text-secondary">Accepted job invitation</p>
+                                    </div>
+                                </div>
+                                <div class="lower-portion">
+                                    <p><span>Arafat Yousuf</span> accepted your job request.<p>
+                                </div>
+                                <div class="notification-button-portion d-flex justify-content-end">
+                                    <button class="remove-tutor-notification">REMOVE NOTIFICATION</button>
+                                    <button class="see-tutor-details ml-3">SEE TUTOR DETAILS</button>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                        <div id="notifications-details-id" class="col-md-6 notifications-details">
                             <div class="card">
                                 <div class="card-content text-center">
                                     <img class="rounded-circle"
@@ -159,7 +269,7 @@
                                         class="card-img-top" alt="...">
                                     <div class="card-body text-center">
                                         <h5 class="card-title pt-3">Taqi Tahmid</h5>
-                                        <p class="card-text text-secondary">Student</p>
+                                        <p class="card-text text-secondary">Student at <span>AUST</span></p>
                                         <p>Specialty in <span>Physics, Chemistry, Math</span></p>
                                     </div>
                                 </div>
@@ -181,6 +291,34 @@
                     </div>
                 </div>
             </div>
+
+            <div id="student-profile-id" class="student-profile">
+                <div class="card profile-card">
+                    <div class="card-content text-center">
+                        <img class="rounded-circle"
+                            src="https://i.ibb.co/f946rJY/65387270-894926760860678-8038545002617372672-n.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title pt-3">Arafat Yousuf</h5>
+                            <p class="card-text text-secondary">510/C Banani, Dhaka-1100</p>
+                        </div>
+                    </div>
+                    <div class="contact d-flex justify-content-between">
+                        <div class="text-center w-50" style="border-right: 1px solid rgb(180, 179, 179);">
+                            <p><i class="fas fa-phone-alt pr-2"></i>01712345678</p>
+                        </div>
+                        <div class="text-center w-50">
+                            <p><i class="fas fa-envelope pr-2"></i>arafatyousuf@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center mt-4">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-google"></a>
+                        <a href="#" class="fab fa-linkedin-in"></a>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </section>
