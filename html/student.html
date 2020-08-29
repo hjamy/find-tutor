@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../css/student.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto&family=PT+Serif&family=Oswald&family=Poppins&family=Slabo+27px&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="container p-0 mb-5">
+        <nav class="navbar navbar-expand-lg navbar-dark custom-bg fixed-top">
+            <a class="navbar-brand" href="index.html"><img src="../Images/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Login
+                        </a>
+                        <div class="dropdown-menu drop-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="student-login.html">Student</a>
+                            <a class="dropdown-item" href="tutor-login.html">Tutor</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sign Up
+                        </a>
+                        <div class="dropdown-menu drop-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="student-register.html">Student</a>
+                            <a class="dropdown-item" href="tutor-register.html">Tutor</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <section class="student-area">
+        <div class="container student mt-5">
+            <div class="btn-box mb-5 d-flex justify-content-between">
+                <button id="post-job-button"><i class="fas fa-clipboard-list"></i>Post a Job</button>
+                <button id="find-tutor-button"><i class="fas fa-search"></i>Find a Tutor</button>
+                <button id="notification-button"><i class="fas fa-bell"></i>Notifications</button>
+                <button id="student-profile-button"><i class="fas fa-user"></i>Profile</button>
+            </div>
+
+            <div id="post-job" class="post-a-job">
+                <div class="job-post-area">
+                    <form>
+                        <select class="selectpicker" data-style="btn-info" data-width="fit" multiple
+                            title="Choose Subject">
+                            <option>Physics</option>
+                            <option>Chemistry</option>
+                            <option>Mathematics</option>
+                            <option>ICT</option>
+                            <option>English</option>
+                            <option>Bengali</option>
+                        </select>
+                        <br><br>
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <input type="text" class="form-control" id="location">
+                        </div>
+                        <div class="form-group">
+                            <label for="salary">Salary</label>
+                            <input type="number" class="form-control" id="salary">
+                        </div>
+                        <br>
+                        <select class="selectpicker" data-style="btn-info" title="Choose Preference">
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                        <br><br><br>
+                        <div class="text-center">
+                            <button id="post-job-button-id" class="job-post-button">Post Job</button>
+                            <!-- <a id="post-job-button-id" class="job-post-button" href="">Post Job</a> -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div id="find-tutor" class="find-a-tutor">
+                <div class="search-tutor-area">
+                    <form class="form my-2 my-lg-0 d-flex justify-content-between">
+                        <div>
+                            <select class="selectpicker" data-style="btn-dark" title="Subject">
+                                <option>Physics</option>
+                                <option>Chemistry</option>
+                                <option>Mathematics</option>
+                                <option>ICT</option>
+                                <option>English</option>
+                                <option>Bengali</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select class="selectpicker" data-style="btn-dark" title="Institute">
+                                <optgroup label="University">
+                                    <option>Buet</option>
+                                    <option>DU</option>
+                                    <option>AUST</option>
+                                </optgroup>
+                                <optgroup label="College">
+                                    <option>NDC</option>
+                                    <option>DC</option>
+                                    <option>VNC</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </form>
+                    <br><br>
+                    <button id="search-tutor-button" class="btn btn-outline-dark my-2 my-sm-0 ml-4"
+                        type="submit">Search</button>
+                </div>
+
+                <div id="found-tutors-list" class="founded-tutors">
+                    <div class="row">
+                        <div class="col-5">
+                            <ul class="list-group">
+                                <li id="founded-tutor-individual-id" class="list-group-item founded-tutor-individual">
+                                    Cras justo odio</li>
+                                <li class="list-group-item founded-tutor-individual">Dapibus ac facilisis in</li>
+                                <li class="list-group-item founded-tutor-individual">Morbi leo risus</li>
+                                <li class="list-group-item founded-tutor-individual">Porta ac consectetur ac</li>
+                                <li class="list-group-item founded-tutor-individual">Vestibulum at eros</li>
+                            </ul>
+                        </div>
+                        <div id="founded-tutor-id" class="col-7 founded-tutor-details">
+                            <img class="rounded-circle w-25 mb-5"
+                                src="https://i.ibb.co/h7zW4zX/93885242-1548123698673359-1072838940270002176-o.jpg"
+                                alt="">
+                            <div class="tutor-info d-flex align-items-center">
+                                <h5><i class="fas fa-user"></i>Taqi Tahmid</h5><br>
+                            </div>
+                            <div class="tutor-info d-flex align-items-center">
+                                <h5><i class="fas fa-university"></i>Student at AUST</h5><br>
+                            </div>
+                            <div class="tutor-info d-flex align-items-center">
+                                <h5><i class="fas fa-book"></i>Specialty in Math, Physics</h5><br>
+                            </div>
+                            <div class="container text-center">
+                                <button id="send-request-button" class="send-request"
+                                    onclick="toastr.success('Hi! I am success message.');">Send Request</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="notification-area-id" class="notification-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 notifications">
+                            <div id="type-1-notification-id" class="type-1-notification">
+                                <div class="upper-portion d-flex justify-content-start">
+                                    <div class="round-shape-type-1  d-flex justify-content-center align-items-center">
+                                        <h5>J</h5>
+                                    </div>
+                                    <div class="notification-type pl-3">
+                                        <p class="text-secondary">Application for job</p>
+                                    </div>
+                                </div>
+                                <div class="lower-portion">
+                                    <p><span>Taqi Tahmid</span> applied for your job post.<p>
+                                </div>
+                                <div class="notification-button-portion d-flex justify-content-end">
+                                    <button id="remove-tutor-notification-id-type-1"
+                                        class="remove-tutor-notification">REMOVE
+                                        NOTIFICATION</button>
+                                    <button id="see-tutor-details-id-type-1" class="see-tutor-details ml-3">SEE TUTOR
+                                        DETAILS</button>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div id="type-2-notification-id" class="type-2-notification">
+                                <div class="upper-portion d-flex justify-content-start">
+                                    <div class="round-shape-type-2  d-flex justify-content-center align-items-center">
+                                        <h5>F</h5>
+                                    </div>
+                                    <div class="notification-type pl-3">
+                                        <p class="text-secondary">Accepted job invitation</p>
+                                    </div>
+                                </div>
+                                <div class="lower-portion">
+                                    <p><span>Arafat Yousuf</span> accepted your job request.<p>
+                                </div>
+                                <div class="notification-button-portion d-flex justify-content-end">
+                                    <button id="remove-tutor-notification-id-type-2"
+                                        class="remove-tutor-notification">REMOVE
+                                        NOTIFICATION</button>
+                                    <button id="see-tutor-details-id-type-2" class="see-tutor-details ml-3">SEE TUTOR
+                                        DETAILS</button>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="type-1-notification">
+                                <div class="upper-portion d-flex justify-content-start">
+                                    <div class="round-shape-type-1  d-flex justify-content-center align-items-center">
+                                        <h5>J</h5>
+                                    </div>
+                                    <div class="notification-type pl-3">
+                                        <p class="text-secondary">Application for job</p>
+                                    </div>
+                                </div>
+                                <div class="lower-portion">
+                                    <p><span>Taqi Tahmid</span> applied for your job post.<p>
+                                </div>
+                                <div class="notification-button-portion d-flex justify-content-end">
+                                    <button class="remove-tutor-notification">REMOVE NOTIFICATION</button>
+                                    <button class="see-tutor-details ml-3">SEE TUTOR DETAILS</button>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div class="type-2-notification">
+                                <div class="upper-portion d-flex justify-content-start">
+                                    <div class="round-shape-type-2  d-flex justify-content-center align-items-center">
+                                        <h5>F</h5>
+                                    </div>
+                                    <div class="notification-type pl-3">
+                                        <p class="text-secondary">Accepted job invitation</p>
+                                    </div>
+                                </div>
+                                <div class="lower-portion">
+                                    <p><span>Arafat Yousuf</span> accepted your job request.<p>
+                                </div>
+                                <div class="notification-button-portion d-flex justify-content-end">
+                                    <button class="remove-tutor-notification">REMOVE NOTIFICATION</button>
+                                    <button class="see-tutor-details ml-3">SEE TUTOR DETAILS</button>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                        <div id="notifications-details-id" class="col-md-6 notifications-details">
+                            <div class="card">
+                                <div class="card-content text-center">
+                                    <img class="rounded-circle"
+                                        src="https://i.ibb.co/h7zW4zX/93885242-1548123698673359-1072838940270002176-o.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title pt-3">Taqi Tahmid</h5>
+                                        <p class="card-text text-secondary">Student at <span>AUST</span></p>
+                                        <p>Specialty in <span>Physics, Chemistry, Math</span></p>
+                                    </div>
+                                </div>
+                                <div class="contact d-flex justify-content-between">
+                                    <div class="text-center w-50" style="border-right: 1px solid rgb(180, 179, 179);">
+                                        <p><i class="fas fa-phone-alt pr-2"></i>01712345678</p>
+                                    </div>
+                                    <div class="text-center w-50">
+                                        <p><i class="fas fa-envelope pr-2"></i>tqitahmid@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-center mt-4">
+                                    <a href="#" class="fab fa-facebook-f"></a>
+                                    <a href="#" class="fab fa-google"></a>
+                                    <a href="#" class="fab fa-linkedin-in"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="student-profile-id" class="student-profile">
+                <div class="card profile-card">
+                    <div class="card-content text-center">
+                        <img class="rounded-circle"
+                            src="https://i.ibb.co/f946rJY/65387270-894926760860678-8038545002617372672-n.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            <h5 class="card-title pt-3">Arafat Yousuf</h5>
+                            <p class="card-text text-secondary">510/C Banani, Dhaka-1100</p>
+                        </div>
+                    </div>
+                    <div class="contact d-flex justify-content-between">
+                        <div class="text-center w-50" style="border-right: 1px solid rgb(180, 179, 179);">
+                            <p><i class="fas fa-phone-alt pr-2"></i>01712345678</p>
+                        </div>
+                        <div class="text-center w-50">
+                            <p><i class="fas fa-envelope pr-2"></i>arafatyousuf@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="card-footer text-center mt-4">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-google"></a>
+                        <a href="#" class="fab fa-linkedin-in"></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="container-fluid footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h5>About Us</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta
+                            accusamus voluptatibus
+                            perferendis ab nobis sit soluta praesentium quas. Ullam, repellat.</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Work with Us</h5>
+                        <p><a href="">Become a Tutor</a></p>
+                        <p><a href="">Login as Tutor</a></p>
+                        <p><a href="">Contact Us</a></p>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Information</h5>
+                        <p><a href="">Home</a><br></p>
+                        <p><a href="">Job Board</a></p>
+                        <p><a href="">Terms & Conditions</a></p>
+                        <p><a href="">Find a Tutor</a></p>
+                    </div>
+                    <div class="col-md-3">
+                        <h5>Reach Us</h5>
+                        <p><i class="fas fa-map-marker-alt pr-2"></i>12/3 Khilgaon, Dhaka-1219</p>
+                        <p><i class="fas fa-phone-alt pr-2"></i>+880123456789</p>
+                        <p><i class="far fa-envelope-open pr-2"></i>tryatutor@gmail.com</p>
+                    </div>
+                </div>
+                <h5 class="mt-4">Find Us Here</h5>
+                <div class="social-icons d-flex justify-content-between">
+                    <div class="social">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                    </div>
+                    <div class="social">
+                        <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                    <div class="social">
+                        <a href="#" class="fab fa-twitter"></a>
+                    </div>
+                    <div class="social">
+                        <a href="#" class="fab fa-linkedin-in"></a>
+                    </div>
+                </div>
+                <hr>
+                <p class="text-center" style="font-size: small;">&copy; 2020 Try a Tutor. All rights reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../js/student.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+</body>
+
+</html>
