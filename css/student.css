@@ -169,10 +169,12 @@
 
 .type-1-notification {
     padding: 20px 20px 0px;
+    /* background-color: lightskyblue; */
 }
 
 .type-2-notification {
     padding: 10px 20px 0px;
+    /* background-color: lightgreen; */
 }
 
 .round-shape-type-1 {

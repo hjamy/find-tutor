@@ -2,6 +2,10 @@ const boardBtn = document.getElementById("board-button");
 const invitationBtn = document.getElementById("invitation-button");
 const employerBtn = document.getElementById("employer-button");
 const profileBtn = document.getElementById("profile-button");
+const employerIndividualId = document.getElementById("employer-individual-id");
+const jobSerialId = document.getElementById("job-serial-id");
+const invitationSerialId = document.getElementById("invitation-serial-id");
+
 boardBtn.addEventListener("click", function () {
     const board = document.getElementById("board");
     board.style.display = "block"
@@ -19,6 +23,10 @@ boardBtn.addEventListener("click", function () {
     profileBtn.style.color = "#000";
 })
 
+jobSerialId.addEventListener("click", function () {
+    const jobDetails = document.getElementById("job-details")
+    jobDetails.style.display = "block"
+})
 
 invitationBtn.addEventListener("click", function () {
     const invitation = document.getElementById("invitation");
@@ -37,6 +45,10 @@ invitationBtn.addEventListener("click", function () {
     profileBtn.style.color = "#000";
 })
 
+invitationSerialId.addEventListener("click", function () {
+    const invitationDetails = document.getElementById("invitation-details")
+    invitationDetails.style.display = "block"
+})
 
 employerBtn.addEventListener("click", function () {
     const employer = document.getElementById("employer");
@@ -55,6 +67,10 @@ employerBtn.addEventListener("click", function () {
     profileBtn.style.color = "#000";
 })
 
+employerIndividualId.addEventListener("click", function () {
+    const employerId = document.getElementById("employer-id")
+    employerId.style.display = "block"
+})
 
 profileBtn.addEventListener("click", function () {
     const profile = document.getElementById("profile");
@@ -72,33 +88,33 @@ profileBtn.addEventListener("click", function () {
 })
 
 
-//job-details show item event handler
-var jobs = document.getElementsByClassName("job-serial");
-var jobFunction = function () {
-    const jobDetails = document.getElementById("job-details")
-    jobDetails.style.display = "block"
-};
-for (var i = 0; i < jobs.length; i++) {
-    jobs[i].addEventListener('click', jobFunction, false);
-}
+// //job-details show item event handler
+// var jobs = document.getElementsByClassName("job-serial");
+// var jobFunction = function () {
+//     const jobDetails = document.getElementById("job-details")
+//     jobDetails.style.display = "block"
+// };
+// for (var i = 0; i < jobs.length; i++) {
+//     jobs[i].addEventListener('click', jobFunction, false);
+// }
 
 
-//invitation-details show item event handler
-var invitations = document.getElementsByClassName("invitation-serial");
-var invitationFunction = function () {
-    const invitationDetails = document.getElementById("invitation-details")
-    invitationDetails.style.display = "block"
-};
-for (var i = 0; i < invitations.length; i++) {
-    invitations[i].addEventListener('click', invitationFunction, false);
-}
+// //invitation-details show item event handler
+// var invitations = document.getElementsByClassName("invitation-serial");
+// var invitationFunction = function () {
+//     const invitationDetails = document.getElementById("invitation-details")
+//     invitationDetails.style.display = "block"
+// };
+// for (var i = 0; i < invitations.length; i++) {
+//     invitations[i].addEventListener('click', invitationFunction, false);
+// }
 
-//employer-details show item event handler
-var employers = document.getElementsByClassName("employer-individual");
-var employerFunction = function () {
-    const employerId = document.getElementById("employer-id")
-    employerId.style.display = "block"
-};
-for (var i = 0; i < employers.length; i++) {
-    employers[i].addEventListener('click', employerFunction, false);
-}
+// //employer-details show item event handler
+// var employers = document.getElementsByClassName("employer-individual");
+// var employerFunction = function () {
+//     const employerId = document.getElementById("employer-id")
+//     employerId.style.display = "block"
+// };
+// for (var i = 0; i < employers.length; i++) {
+//     employers[i].addEventListener('click', employerFunction, false);
+// }
