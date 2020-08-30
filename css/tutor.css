@@ -114,6 +114,10 @@ tr:hover {
     outline: none;
 }
 
+.details-box button:hover {
+    background-color: #228dff;
+}
+
 .table-hover tbody tr:hover .job-serial,
 .table-hover tbody tr:hover .invitation-serial {
     cursor: pointer;

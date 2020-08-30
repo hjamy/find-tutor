@@ -22,8 +22,12 @@
 .submit-area {
     margin: 50px 200px;
     box-shadow: 0px 2px 10px lightgray;
-    padding: 80px 120px;
+    padding: 80px 120px 0px;
     font-family: 'Roboto', sans-serif;
+}
+
+.submit-area a {
+    text-decoration: none;
 }
 
 .form-group {
