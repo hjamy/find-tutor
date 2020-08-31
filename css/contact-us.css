@@ -179,3 +179,76 @@ iframe {
 .form-control:focus-within {
     transform: scale(1.05, 1.05);
 }
+
+
+@media screen and (max-width: 1200px) {
+    .location iframe {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .location iframe {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .location iframe {
+        width: 400px;
+        padding-left: 100px;
+    }
+
+    .location p {
+        text-align: center;
+    }
+
+    .location .contact-icons {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .location iframe {
+        width: 380px;
+        padding-left: 50px;
+    }
+
+    .location p {
+        text-align: center;
+    }
+
+    .location .contact-icons {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .location iframe {
+        width: 340px;
+        padding-left: 30px;
+    }
+
+    .location p {
+        text-align: center;
+    }
+
+    .location .contact-icons {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .location iframe {
+        width: 300px;
+        padding-left: 20px;
+    }
+
+    .location p {
+        text-align: center;
+    }
+
+    .location .contact-icons {
+        justify-content: center;
+    }
+}
