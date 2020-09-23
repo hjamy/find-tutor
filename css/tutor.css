@@ -141,6 +141,10 @@ tr:hover {
     cursor: pointer;
 }
 
+.employer-list {
+    font-family: "Roboto";
+}
+
 .employer-list ul li:hover {
     background-color: #007bff;
     color: white;
