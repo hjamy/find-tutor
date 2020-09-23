@@ -10,6 +10,7 @@ const seeTutorDetailsType2Btn = document.getElementById("see-tutor-details-id-ty
 const notificationsDetailsId = document.getElementById("notifications-details-id");
 const removeTutorNotificationType1Btn = document.getElementById("remove-tutor-notification-id-type-1");
 const removeTutorNotificationType2Btn = document.getElementById("remove-tutor-notification-id-type-2");
+const removeTutorNotificationType3Btn = document.getElementById("remove-tutor-notification-id-type-3");
 const notificationAreaId = document.getElementById("notification-area-id");
 const foundedTutorIndividualId = document.getElementById("founded-tutor-individual-id");
 
@@ -113,7 +114,11 @@ removeTutorNotificationType2Btn.addEventListener("click", function () {
     type2NotificationId.style.display = "none";
 })
 
-
+removeTutorNotificationType3Btn.addEventListener("click", function () {
+    notificationsDetailsId.style.display = "none";
+    const type3NotificationId = document.getElementById("type-3-notification-id");
+    type3NotificationId.style.display = "none";
+})
 
 
 //student profile handler

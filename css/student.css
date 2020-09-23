@@ -177,7 +177,13 @@
     /* background-color: lightgreen; */
 }
 
+.type-3-notification {
+    padding: 10px 20px 0px;
+    /* background-color: lightgreen; */
+}
+
 .type-1-notification .upper-portion p {
+    /* background-color: rgb(247, 56, 56); */
     background-color: #2d9efc;
     color: white;
     border-radius: 5px;
@@ -185,6 +191,12 @@
 
 .type-2-notification .upper-portion p {
     background-color: #038e56;
+    color: white;
+    border-radius: 5px;
+}
+
+.type-3-notification .upper-portion p {
+    background-color: rgb(247, 56, 56);
     color: white;
     border-radius: 5px;
 }
@@ -199,6 +211,15 @@
 }
 
 .round-shape-type-2 {
+    width: 30px;
+    height: 30px;
+    background-color: #e0edfe;
+    color: #88a8f5;
+    border-radius: 50%;
+    border: 1px solid #c2dbfd;
+}
+
+.round-shape-type-3 {
     width: 30px;
     height: 30px;
     background-color: #e0edfe;
@@ -226,6 +247,19 @@
 
 .see-tutor-details:hover {
     border: 1px solid #038e56;
+}
+
+.see-tutor-details-rejected {
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    background-color: lightgray;
+    color: rgb(100, 100, 100);
+    font-size: 10px;
+    font-weight: bold;
+    outline: none !important;
+    padding: 5px 10px;
+    border: 1px solid lightgray;
 }
 
 .remove-tutor-notification {
