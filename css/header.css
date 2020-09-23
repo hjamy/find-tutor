@@ -38,7 +38,7 @@ nav .navbar-brand::after {
 }
 
 .nav-item a:hover {
-    background-color: rgba(56, 82, 83, 0.5);
+    background-color: rgba(0, 89, 92, 0.5);
     color: white !important;
 }
 
@@ -70,5 +70,5 @@ nav .navbar-brand::after {
 }
 
 .dropdown:hover .nav-link {
-    background-color: rgba(56, 82, 83, 0.5);
+    background-color: rgba(0, 89, 92, 0.5);
 }
