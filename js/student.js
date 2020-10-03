@@ -1,6 +1,7 @@
 const postJobBtn = document.getElementById("post-job-button");
 const findTutorBtn = document.getElementById("find-tutor-button");
 const searchTutorBtn = document.getElementById("search-tutor-button");
+const tutorListBtn = document.getElementById("tutor-list-button");
 const profileBtn = document.getElementById("student-profile-button");
 const postJobBtnId = document.getElementById("post-job-button-id");
 const sendRequestBtn = document.getElementById("send-request-button");
@@ -13,6 +14,9 @@ const removeTutorNotificationType2Btn = document.getElementById("remove-tutor-no
 const removeTutorNotificationType3Btn = document.getElementById("remove-tutor-notification-id-type-3");
 const notificationAreaId = document.getElementById("notification-area-id");
 const foundedTutorIndividualId = document.getElementById("founded-tutor-individual-id");
+const connectedTutorIndividualId = document.getElementById("connected-tutor-individual-id")
+const connectedTutorDetailsId = document.getElementById("connected-tutor-details-id");
+
 
 //post job handler
 postJobBtn.addEventListener("click", function () {
@@ -23,9 +27,12 @@ postJobBtn.addEventListener("click", function () {
     const studentProfile = document.getElementById("student-profile-id");
     studentProfile.style.display = "none";
     notificationAreaId.style.display = "none";
+    const connectedTutorList = document.getElementById("connected-tutors-list");
+    connectedTutorList.style.display = "none";
     postJobBtn.style.color = "#04BFCD";
     findTutorBtn.style.color = "#000";
     notificationBtn.style.color = "#000";
+    tutorListBtn.style.color = "#000";
     profileBtn.style.color = "#000";
 })
 
@@ -49,9 +56,12 @@ findTutorBtn.addEventListener("click", function () {
     const studentProfile = document.getElementById("student-profile-id");
     studentProfile.style.display = "none";
     notificationAreaId.style.display = "none";
+    const connectedTutorList = document.getElementById("connected-tutors-list");
+    connectedTutorList.style.display = "none";
     postJobBtn.style.color = "#000";
     findTutorBtn.style.color = "#04BFCD";
     notificationBtn.style.color = "#000";
+    tutorListBtn.style.color = "#000";
     profileBtn.style.color = "#000";
 })
 
@@ -86,9 +96,12 @@ notificationBtn.addEventListener("click", function () {
     studentProfile.style.display = "none";
     const notificationsDetailsId = document.getElementById("notifications-details-id");
     notificationsDetailsId.style.display = "none";
+    const connectedTutorList = document.getElementById("connected-tutors-list");
+    connectedTutorList.style.display = "none";
     postJobBtn.style.color = "#000";
     findTutorBtn.style.color = "#000";
     notificationBtn.style.color = "#04BFCD";
+    tutorListBtn.style.color = "#000";
     profileBtn.style.color = "#000";
 })
 
@@ -121,6 +134,32 @@ removeTutorNotificationType3Btn.addEventListener("click", function () {
 })
 
 
+//connected tutor list handler
+tutorListBtn.addEventListener("click", function () {
+    const connectedTutorList = document.getElementById("connected-tutors-list");
+    connectedTutorList.style.display = "block";
+    connectedTutorDetailsId.style.display = "none";
+    notificationAreaId.style.display = "none";
+    const postJob = document.getElementById("post-job");
+    postJob.style.display = "none"
+    const findTutor = document.getElementById("find-tutor");
+    findTutor.style.display = "none";
+    const studentProfile = document.getElementById("student-profile-id");
+    studentProfile.style.display = "none";
+    const notificationsDetailsId = document.getElementById("notifications-details-id");
+    notificationsDetailsId.style.display = "none";
+    postJobBtn.style.color = "#000";
+    findTutorBtn.style.color = "#000";
+    notificationBtn.style.color = "#000";
+    tutorListBtn.style.color = "#04BFCD";
+    profileBtn.style.color = "#000";
+
+})
+
+connectedTutorIndividualId.addEventListener("click", function () {
+    connectedTutorDetailsId.style.display = "block";
+})
+
 //student profile handler
 profileBtn.addEventListener("click", function () {
     const studentProfile = document.getElementById("student-profile-id");
@@ -130,9 +169,12 @@ profileBtn.addEventListener("click", function () {
     const findTutor = document.getElementById("find-tutor");
     findTutor.style.display = "none";
     notificationAreaId.style.display = "none";
+    const connectedTutorList = document.getElementById("connected-tutors-list");
+    connectedTutorList.style.display = "none";
     postJobBtn.style.color = "#000";
     findTutorBtn.style.color = "#000";
     notificationBtn.style.color = "#000";
+    tutorListBtn.style.color = "#000";
     profileBtn.style.color = "#04BFCD";
 })
 

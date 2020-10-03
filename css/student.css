@@ -158,6 +158,14 @@
     display: none;
 }
 
+#connected-tutors-list {
+    display: none;
+}
+
+#connected-tutor-details-id {
+    display: none;
+}
+
 .notification-area {
     margin: 50px 0px 50px 50px;
 }
@@ -277,6 +285,27 @@
 
 .remove-tutor-notification:hover {
     border: 1px solid #ee7d09;
+}
+
+.connected-tutors ul li:hover {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.connected-tutor-details {
+    padding-left: 150px;
+}
+
+.connected-profile-card {
+    width: 77% !important;
+    background-image: url("../Images/background/profile-background.png") !important;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: left;
+    margin: auto;
+    border: none;
+    box-shadow: 3px 3px 5px 2px gray;
 }
 
 .card {
