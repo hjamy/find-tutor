@@ -382,16 +382,16 @@
                 <h5 class="mt-4">Find Us Here</h5>
                 <div class="social-icons d-flex justify-content-between">
                     <div class="social">
-                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-facebook-f" rel="tooltip" title="Facebook"></a>
                     </div>
                     <div class="social">
-                        <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-instagram" rel="tooltip" title="Instagram"></a>
                     </div>
                     <div class="social">
-                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-twitter" rel="tooltip" title="Twitter"></a>
                     </div>
                     <div class="social">
-                        <a href="#" class="fab fa-linkedin-in"></a>
+                        <a href="#" class="fab fa-linkedin-in" rel="tooltip" title="LinkedIn"></a>
                     </div>
                 </div>
                 <hr>
@@ -400,6 +400,12 @@
         </div>
     </footer>
 
+
+    <script type="text/javascript">
+        $(function () {
+            $("[rel='tooltip']").tooltip();
+        });
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
